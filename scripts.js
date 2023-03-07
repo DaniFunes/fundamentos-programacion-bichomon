@@ -55,7 +55,11 @@ const flying = document.querySelectorAll(".infocard-lg-data.text-muted a.itype.f
 
 // }
 
-flying.forEach((pokemon) => pokemon.style.color = "yellow")
+flying.forEach((pokemonType) => {
+    const infocardData = pokemonType.parentElement.parentElement;
+    infocardData.style.backgroundColor = "yellow";
+
+})
 
 
 
